@@ -1,6 +1,6 @@
 # AutoTraining — Map Training Automation / 地图训练自动化
 
-> Version 1.0.0 ｜ Target game / 适配游戏：Esports Manager 2026 Steam retail patch 1.0.1 (Unity 6000.3.12f1 / IL2CPP metadata v39) ｜ License: MIT
+> Version 1.0.1 ｜ Target game / 适配游戏：Esports Manager 2026 Steam retail patch 1.0.2 (Unity 6000.3.12f1 / IL2CPP metadata v39) ｜ License: MIT
 
 **Language / 语言**: [English](#english) ｜ [中文](#中文)
 
