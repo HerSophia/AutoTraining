@@ -12,20 +12,20 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout into plugin folder
+      - name: Checkout into pluginfolder
         uses: actions/checkout@v4
         with:
           path: AutoTraining
 
-      - name: Packageplugin
+      - name: Package plugin
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           echo "Packaging AutoTraining version $VERSION"
-          zip -r "AutoTraining-${VERSION}.zip" AutoTraining \
+          zip -r "AutoTraining-${VERSION}.zip" "AutoTraining" \
             -x "AutoTraining/.git/*" "AutoTraining/.github/*" "AutoTraining/.gitignore"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
-       with:
+        with:
           files: "AutoTraining-*.zip"
           generate_release_notes: true
